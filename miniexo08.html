@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo: 08</title>
+    <style>
+        body{
+            background: olive;
+        }
+        div{
+             background: pink;
+             margin-bottom: 10px;
+        }
+        p{
+            background: white;
+            color: red;
+        }
+        a{
+            background: plum;
+        }
+        .displaynone{
+            display: none;
+        }
+        .displayinline{
+            display: inline;
+        }
+        .displayblock{
+            display: block;
+        }
+
+        .displayinlineblock{
+            display: inline-block;
+            height:500px;
+            width: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    
+    <div>
+        <h2>1/Comportement normal de chez normal</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci. Et officia aspernatur ex quis doloremque obcaecati. Suscipit,<p> a voluptatum neque eligendi officia,</p> ratione laborum earum dolor debitis quasi tenetur?ratione laborum <a href="#" title="un lien"> earum dolor debitis quasi tenetur?ratione laborum earum dolor debitis quasi tenetur?</a>
+    </div>
+    <div>
+        <h2>2/Display: none;</h2>
+        <!-- l'element ne s'affiche pas -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci. Et officia aspernatur ex quis doloremque obcaecati. Suscipit, <p class="displaynone"> a voluptatum neque eligendi officia,</p> ratione <a href="#" title="un lien" class="displaynone"> laborum earum dolor debitis quasi tenetur?</a>
+    </div>
+    <div>
+        <h2>3/Display: inline;</h2>
+            <!-- affiche un élément comme un element en ligne aucune propriété de largeur ni de hauteur n'auront d'effet -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci. Et officia aspernatur ex quis doloremque obcaecati. Suscipit, <p class="displayinline"> a voluptatum neque eligendi officia,</p> ratione laborum <a href="#" title="un lien" class="displayinline">earum dolor debitis quasi tenetur?</a>
+    </div>
+    <div>
+        <h2>4/Display: block;</h2>
+        <!-- affiche un élément comme un block (ex. p) il commence sur une nouvelle ligne et prends toute la largeur -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci. Et officia aspernatur ex quis doloremque obcaecati. Suscipit,<p> a voluptatum neque eligendi officia,</p> ratione laborum <a href="#" title="un lien" class="displayblock" > earum dolor debitis quasi tenetur?</a>
+    </div>
+    <div>
+        <h2>5/Display: inline-block;</h2> <!-- il change de comportement ; il devien inline mais aussi on peu lui donné un width et height comme un element block -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci. Et officia aspernatur ex quis doloremque obcaecati. Suscipit,<p class="displayinlineblock"> a voluptatum neque eligendi officia,</p> ratione laborum <a href="#" title="un lien" class="displayinlineblock"> earum dolor debitis quasi tenetur?</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo: 07</title>
+    <style>
+        body{
+            background: olive;
+        }
+    
+        form {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Un formulaire d'inscription</h1>
+    <form action="miniexo07.html" method="POST"><!-- me permete de cree un formulaire -->  <!--  (action="") c'est un fichier php -->
+        
+            <fieldset> <!-- faire un block de chan -->
+                <legend>Identité</legend>
+
+                <label for="prenom">Prénom *</label>
+                <input type="text" name="prenom" id="Prénom" placeholder="prenom" required>
+        
+                <label for="nom">Nom *</label>
+                <input type="text" name="nom" id="Nom" placeholder="nom" required>
+
+            </fieldset>
+
+            <fieldset> <!-- faire un block de chan -->
+                <legend>Votre adresse postal</legend>
+    
+                <label for="adresse">Adresse</label>
+                <input type="text" name="adresse" placeholder="adresse">
+        
+                <label for="code_postal">Code postal</label>
+                <input type="text" name="code_postal" placeholder="code postal">
+                
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville" placeholder="ville">
+    
+            </fieldset>
+            <fieldset>
+                <legend>Votre email *</legend>
+                <label for="email">Adresse email</label>
+                <input type="email" name="email"  placeholder="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexe</legend>
+
+                <label for="sexe">Homme</label>
+                <input type="radio" name="sexe" value="homme" checked>
+    
+                <label for="sexe">Femme</label>
+                <input type="radio" name="sexe" value="femme">
+                
+            </fieldset>
+            <fieldset>
+                    <legend>Avez vous du matériel ?</legend>
+    
+                    <label for="matos">Oui</label>
+                    <input type="checkbox" name="matos" value="oui">
+            
+                    <label for="non">Non</label>
+                    <input type="checkbox" name="matos" value="Non">
+
+                    <label for="matos">J'ai de la laine</label>
+                    <input type="checkbox" name="matos" value="oui">
+    
+            </fieldset>
+            <fieldset>
+                <legend>faite vous de tricot</legend>
+                <label for="tricot">tricot</label>
+                <select name="usage">
+                    <option value="0">choisissiez votre niveau en tricot</option>
+                    <option value="jamais">jamais</option>
+                    <option value="jenaifait">Il y a longtemps</option>
+                    <option value="parfois">parfois</option>
+                    <option value="toujours">toujours</option>
+                    
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Votre commentaire</legend>
+                <label for="message">Votre message</label>
+                <textarea name="message" rows="8" cols="50">Dite nous en un peu plus si vous le souhaitez...</textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inscrivez-vous en envoyant le</legend>
+                <input type="submit" name="envoyer" value="Inscrivez-vous">
+                <input type="submit"  name="Effacer" value="Effacer"> <br> <br>
+                <small>* obligatoire</small>
+            </fieldset>
+
+        
+    </form>
+
+   
+</body>
+</html>
