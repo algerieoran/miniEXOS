@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo: 09</title>
+    <style>
+        /* couleurs de fond */
+        
+        .vert{
+            background: green;
+        }
+        .orange{
+           background: orangered;
+        }
+        .bleu{
+            background: lightblue;
+            border: 1px solid #333;
+        }
+
+        .centrepadding {
+            padding: 70px 0;
+            /* text-align: center; */
+        }
+
+        .centre_lineheight{
+            height: 300px;
+            line-height:300px;
+        }
+
+        /* si il y a plusieurs lignes ajoutons le code suivant au p */
+        .centre p {
+            line-height: 1.8;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+  <h2>Centré verticallement en utilisant <code>padding</code></h2>
+ <div class="centrepadding bleu"> <p>Je suis centré verticallement</p></div>
+   </div>
+   <hr>
+<!-- utilisation de line-height avec une valeur égale à la hauteur du bloc -->
+   <h2>Centré verticallement en utilisant <code>line-height</code></h2>
+ <div class="orange centre_lineheight"> <p>Je suis centré verticallement</p></div>
+   </div>
+
+   <hr>
+   <h2>Et si il y a plusieurs éléments ?</h2>
+   <div class="centre vert">
+   <p> 1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus tenetur, voluptatem ullam voluptatibus asperiores totam deleniti officiis sit beatae molestias consectetur, et quos libero corrupti. Vel quibusdam beatae optio autem?</p>
+   
+</div>
+</body>
+</html>

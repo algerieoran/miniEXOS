@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini exo: 09</title>
+    <style>
+        /* couleurs de fond */
+        
+        .vert{
+            background: green;
+        }
+        .orange{
+           background: orangered;
+        }
+        .bleu{
+            background: lightblue;
+            border: 1px solid pink;
+
+        }
+
+
+        .img1{
+            float: right;
+        }
+
+        .img2{
+            float: right;
+        }
+
+        .clearfix{
+           overflow: auto;
+        }
+
+        .clearright{
+            clear: right;
+        }
+        
+    </style>
+</head>
+<body>
+   <h2>Dans cette exemple l'image est plus grande que l'élément qui la contient, et elle fllote donc elle sort du bloc</h2>
+   <div class="bleu clearfix">
+       <!-- l'image est dans la div mais elle est plus grand et donne l'impression de sortir de la div -->
+       <img src="img/montagne.jpg" alt="montagne" class="img1">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero sapiente delectus aspernatur optio a
+   </div>
+   <p class="clearright: ">on ajoute une class clearfix avec overflow: auto à lélément pour régler le probleme </p>
+
+   <div class="orange clearfix">
+       <img src="img/montagne.jpg" alt="montagne" class="img2" width="100px" height="100px">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium ad iste aliquid nam modi autem? Nesciunt molestias facere et provident maxime, dicta ipsum placeat exercitationem impedit recusandae, dolorum unde.
+       Eos tenetur consectetur voluptatum doloribus. Quibusdam est ipsam molestiae eum aliquam saepe mollitia inventore pariatur. Autem saepe nobis, exercitationem, dolorem maxime libero iure, nam laborum deleniti obcaecati illum id omnis.
+       Doloremque magni, harum fuga ipsum nihil itaque perspiciatis ex molestiae illum nam dolores reiciendis temporibus inventore sequi consectetur nemo, id quibusdam eius, iste reprehenderit? Velit maiores rem eum odio perferendis.
+   </div>
+</body>
+</html>
